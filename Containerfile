@@ -13,8 +13,7 @@ RUN apt update && \
 RUN wget -O node.tar.xz \
       "https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.xz"
 
-RUN tar -xJf node.tar.xz -C /usr/local --strip-components=1 && \
-    rm node.tar.xz
+RUN tar -xJf node.tar.xz -C /usr/local --strip-components=1
 
 # 2. RUNTIME
 FROM ghcr.io/containerpak/base:main
