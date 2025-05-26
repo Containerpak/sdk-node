@@ -1,11 +1,9 @@
 {
   "name": "Go Node LTS",
-  "description": "Build simple, secure, scalable systems with Go and Node.js",
+  "description": "Build simple, secure, scalable systems with Node.js",
   "version": "v22.16.0",
-  "image": "ghcr.io/containerpak/go-node:main",
+  "image": "ghcr.io/containerpak/go-node-lts:main",
   "binaries": [
-    "/usr/local/bin/go",
-    "/usr/local/bin/gofmt",
     "/usr/local/bin/node",
     "/usr/local/bin/npm"
   ],
