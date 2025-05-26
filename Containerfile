@@ -7,7 +7,8 @@ WORKDIR /tmp
 RUN apt update && \
     apt install -y --no-install-recommends \
       wget \
-      ca-certificates && \
+      ca-certificates \
+      xz-utils && \
       /usr/bin/cpak-clean-junk
 
 RUN wget -O node.tar.xz \
